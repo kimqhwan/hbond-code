@@ -1746,7 +1746,7 @@ if((nsolventtype == 1 && nsolutetype == 1) || (nsolventtype == 1 && nsolutetype 
       fgets(line,512,fsolute1);
 
    for(i=0; i < nAtomT1; i++){
-      if(fscanf(fsolute1, "%d %s %s %d %lf %lf %lf", &residue_num, residue_name, atmTypeS1[i], &atom_num, &atmS1[3*(i+1)-3], &atmS1[3*(i+1)-2], &atmS1[3*(i+1)-1]) != 7){
+      if(fscanf(fsolute1, "%d %s %s %d %lf %lf %lf", &residue_num, residue_name, atmTypeT1[i], &atom_num, &atmT1[3*(i+1)-3], &atmT1[3*(i+1)-2], &atmT1[3*(i+1)-1]) != 7){
         printf("Solute1 GRO file: Cannot read coordinates\n");
         exit(-1);
       }
@@ -1801,7 +1801,7 @@ if(nsolventtype == 1 && nsolutetype == 2)
       fgets(line,512,fsolute2);
 
    for(i=0; i < nAtomT2; i++){
-      if(fscanf(fsolute2, "%d %s %s %d %lf %lf %lf", &residue_num, residue_name, atmTypeS1[i], &atom_num, &atmS1[3*(i+1)-3], &atmS1[3*(i+1)-2], &atmS1[3*(i+1)-1]) != 7){
+      if(fscanf(fsolute2, "%d %s %s %d %lf %lf %lf", &residue_num, residue_name, atmTypeT2[i], &atom_num, &atmT2[3*(i+1)-3], &atmT2[3*(i+1)-2], &atmT2[3*(i+1)-1]) != 7){
         printf("Solute2 GRO file: Cannot read coordinates\n");
         exit(-1);
       }
@@ -1856,7 +1856,7 @@ if((nsolventtype == 2 && nsolutetype == 0) || (nsolventtype == 2 && nsolutetype 
       fgets(line,512,fsolvent2);
 
    for(i=0; i < nAtomS2; i++){
-      if(fscanf(fsolvent2, "%d %s %s %d %lf %lf %lf", &residue_num, residue_name, atmTypeS1[i], &atom_num, &atmS1[3*(i+1)-3], &atmS1[3*(i+1)-2], &atmS1[3*(i+1)-1]) != 7){
+      if(fscanf(fsolvent2, "%d %s %s %d %lf %lf %lf", &residue_num, residue_name, atmTypeS2[i], &atom_num, &atmS2[3*(i+1)-3], &atmS2[3*(i+1)-2], &atmS2[3*(i+1)-1]) != 7){
         printf("Solvent2 GRO file: Cannot read coordinates\n");
         exit(-1);
       }
@@ -1912,7 +1912,7 @@ if((nsolventtype == 2 && nsolutetype == 1) || (nsolventtype == 2 && nsolutetype 
       fgets(line,512,fsolute1);
 
    for(i=0; i < nAtomT1; i++){
-      if(fscanf(fsolute1, "%d %s %s %d %lf %lf %lf", &residue_num, residue_name, atmTypeS1[i], &atom_num, &atmS1[3*(i+1)-3], &atmS1[3*(i+1)-2], &atmS1[3*(i+1)-1]) != 7){
+      if(fscanf(fsolute1, "%d %s %s %d %lf %lf %lf", &residue_num, residue_name, atmTypeT1[i], &atom_num, &atmT1[3*(i+1)-3], &atmT1[3*(i+1)-2], &atmT1[3*(i+1)-1]) != 7){
         printf("Solute1 GRO file: Cannot read coordinates\n");
         exit(-1);
       }
@@ -1969,7 +1969,7 @@ if(nsolventtype == 2 && nsolutetype == 2)
       fgets(line,512,fsolute2);
 
    for(i=0; i < nAtomT2; i++){
-      if(fscanf(fsolute2, "%d %s %s %d %lf %lf %lf", &residue_num, residue_name, atmTypeS1[i], &atom_num, &atmS1[3*(i+1)-3], &atmS1[3*(i+1)-2], &atmS1[3*(i+1)-1]) != 7){
+      if(fscanf(fsolute2, "%d %s %s %d %lf %lf %lf", &residue_num, residue_name, atmTypeT2[i], &atom_num, &atmT2[3*(i+1)-3], &atmT2[3*(i+1)-2], &atmT2[3*(i+1)-1]) != 7){
         printf("Solute2 GRO file: Cannot read coordinates\n");
         exit(-1);
       }
@@ -2026,7 +2026,7 @@ if(nsolventtype == 3)
       fgets(line,512,fsolvent3);
 
    for(i=0; i < nAtomS3; i++){
-      if(fscanf(fsolvent3, "%d %s %s %d %lf %lf %lf", &residue_num, residue_name, atmTypeS1[i], &atom_num, &atmS1[3*(i+1)-3], &atmS1[3*(i+1)-2], &atmS1[3*(i+1)-1]) != 7){
+      if(fscanf(fsolvent3, "%d %s %s %d %lf %lf %lf", &residue_num, residue_name, atmTypeS3[i], &atom_num, &atmS3[3*(i+1)-3], &atmS3[3*(i+1)-2], &atmS3[3*(i+1)-1]) != 7){
         printf("Solvent3 GRO file: Cannot read coordinates\n");
         exit(-1);
       }
@@ -2081,7 +2081,7 @@ if((nsolventtype == 3 && nsolutetype == 1) || (nsolventtype == 3 && nsolutetype 
       fgets(line,512,fsolute1);
 
    for(i=0; i < nAtomT1; i++){
-      if(fscanf(fsolute1, "%d %s %s %d %lf %lf %lf", &residue_num, residue_name, atmTypeS1[i], &atom_num, &atmS1[3*(i+1)-3], &atmS1[3*(i+1)-2], &atmS1[3*(i+1)-1]) != 7){
+      if(fscanf(fsolute1, "%d %s %s %d %lf %lf %lf", &residue_num, residue_name, atmTypeT1[i], &atom_num, &atmT1[3*(i+1)-3], &atmT1[3*(i+1)-2], &atmT1[3*(i+1)-1]) != 7){
         printf("Solute1 GRO file: Cannot read coordinates\n");
         exit(-1);
       }
@@ -2134,7 +2134,7 @@ if(nsolventtype == 3 && nsolutetype == 2)
       fgets(line,512,fsolute2);
 
    for(i=0; i < nAtomT2; i++){
-      if(fscanf(fsolute2, "%d %s %s %d %lf %lf %lf", &residue_num, residue_name, atmTypeS1[i], &atom_num, &atmS1[3*(i+1)-3], &atmS1[3*(i+1)-2], &atmS1[3*(i+1)-1]) != 7){
+      if(fscanf(fsolute2, "%d %s %s %d %lf %lf %lf", &residue_num, residue_name, atmTypeT2[i], &atom_num, &atmT2[3*(i+1)-3], &atmT2[3*(i+1)-2], &atmT2[3*(i+1)-1]) != 7){
         printf("Solute2 GRO file: Cannot read coordinates\n");
         exit(-1);
       }
